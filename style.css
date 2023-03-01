@@ -1,0 +1,47 @@
+:root {
+    --brown:#684A2A;
+    --heading-two: 40px;
+    --card-titles: 25px;
+    --text: 18px;
+    --heading-one:60px;
+}
+*,
+*::before,
+*::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Lato', sans-serif;
+}
+button {
+    background-color:transparent;
+    border:2px solid var(--brown);
+    border-radius:2rem;
+    padding:0.5rem 1rem;
+    font-weight:700;
+    cursor:pointer;
+}
+ul {
+    list-style:none;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+header,
+section,
+main,
+footer {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    width:100%;
+    max-width:1440px;
+    padding:6rem 4rem;
+}
+p {
+    line-height:1.75;
+}
