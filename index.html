@@ -10,21 +10,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="builder-svgrepo-com.svg" type="image/x-icon">
+    <script defer src="index.js"></script>
 
 </head>
-<body>
+<body style="overflow-x:hidden;">
     <header>
         <div class="header-wrapper">
-            <img src="justbuildit-tiny/Screenshot 2023-03-01 at 09.32 1.png" alt="Just Build It Guernsey Logo">
+            <a href="#"><img src="justbuildit-tiny/Screenshot 2023-03-01 at 09.32 1.png" alt="Just Build It Guernsey Logo"></a>
             <ul>
-                <li>HOME</li>
-                <li>WHY US</li>
-                <li>SERVICES</li>
-                <li>OUR WORK</li>
-                <li>TESTIMONIALS</li>
-                <button>CONTACT US</button>
+                <a href="#">
+                    <li>HOME</li>
+                </a>
+                <a href="#services">
+                    <li>SERVICES</li>
+                </a>
+                <a href="#why-us">
+                    <li>WHY US</li>
+                </a>
+               
+                <a href="#our-work">
+                    <li>OUR WORK</li>
+                </a>
+                <a href="#testimonials">
+                    <li>TESTIMONIALS</li>
+                </a>
+                <a href="#contact">
+                    <button>CONTACT US</button>
+                </a>
             </ul>
-            <img src="jbi-grid-new/menu-hamburger-svgrepo-com.svg" alt="Hamburger Menu" class="menu">
+            <div class="dropdown"  data-dropdown >
+                <img data-dropdown-button src="jbi-grid-new/menu-hamburger-svgrepo-com.svg" alt="Mobile Menu" class="menu link">
+
+                <div class="dropdown-menu information-grid" style="overflow:visible !important">
+                    <div class="div">
+                        <div class="dropdown-heading" style="overflow:visible !important"><a aria-label="Dropdown Home Link" href="#">HOME</a></div>
+                        
+                    </div>
+                    <div class="div">
+                        <div class="dropdown-heading" style="overflow:visible !important"><a aria-label="Dropdown Our Work Page Link" href="#services">SERVICES</a></div>
+                        
+                    </div>
+                    <div class="div">
+                        <div class="dropdown-heading" style="overflow:visible !important"><a aria-label="Dropdown Contact Link" href="#why-us">WHY US</a></div>
+                        
+                    </div>
+                    <div class="div">
+                        <div class="dropdown-heading" style="overflow:visible !important"><a aria-label="Dropdown Contact Link" href="#our-work">OUR WORK</a></div>
+                        
+                    </div>
+                    <div class="div">
+                        <div class="dropdown-heading" style="overflow:visible !important"><a aria-label="Dropdown Contact Link" href="#testimonials">TESTIMONIALS</a></div>
+                        
+                    </div>
+                    <div class="div">
+                        <div class="dropdown-heading" style="overflow:visible !important"><a aria-label="Dropdown Contact Link" href="#contact">CONTACT US</a></div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -32,13 +76,14 @@
             <div class="hero-image">
                 <h1>High Quality Building Work in Guernsey</h1>
                 <p>We offer the highest quality building services in Guernsey, contact Mike now for a free quote.</p>
-                <button>GET A FREE QUOTE</button>
+                <a href="#contact"><button>GET A FREE QUOTE</button></a>
             </div>
         </div>
     </main>
-    <section class="what-we-do-section">
+    <section id="services" class="what-we-do-section">
         <div class="wrapper">
             <div class="what-we-do-titles">
+                <p class="watermark">QUALITY</p>
                 <p>SERVICES</p>
                 <h2>WHAT WE DO</h2>
             </div>
@@ -47,28 +92,28 @@
                     <img src="justbuildit-tiny/IMG_0024-preview.png" alt="Outdoor Decking">
                     <div class="card-tag">
                         <p>Outdoor Decking</p>
-                       <button>ENQUIRE NOW</button>
+                       <a href="#contact"><button>ENQUIRE NOW <span>&#187;</span></button></a>
                     </div>
                 </div>
                 <div class="what-we-do-card">
                     <img src="justbuildit-tiny/IMG_1342.png" alt="Stairs & Rails">
                     <div class="card-tag">
                         <p>Stairs & Rails</p>
-                       <button>ENQUIRE NOW</button>
+                       <a href="#contact"><button>ENQUIRE NOW <span>&#187;</span></button></a>
                     </div>
                 </div>
                 <div class="what-we-do-card">
                     <img src="justbuildit-tiny/003B7DD0-7E01-473B-88E5-AF0F247F0B03-preview.png" alt="Conservatories">
                     <div class="card-tag">
                         <p>Conservatories</p>
-                       <button>ENQUIRE NOW</button>
+                       <a href="#contact"><button>ENQUIRE NOW <span>&#187;</span></button></a>
                     </div>
                 </div>
                 <div class="what-we-do-card">
                     <img src="justbuildit-tiny/IMG_0375.png" alt="Brickwork">
                     <div class="card-tag">
                         <p>Brickwork</p>
-                       <button>ENQUIRE NOW</button>
+                       <a href="#contact"><button>ENQUIRE NOW <span>&#187;</span></button></a>
                     </div>
                 </div>
             </div>
@@ -76,10 +121,11 @@
     </section>
     <section class="first-text-section">
         <div class="wrapper">
+            <p class="watermark">TRUSTED</p>
             <h2><strong>20 years</strong> of trusted trade. We have been delivering high quality buidling work to our clients for the best part of <strong>20 years</strong>.</h2>
         </div>
     </section>
-    <section class="why-choose-us-section">
+    <section id="why-us" class="why-choose-us-section">
         <div class="wrapper">
             <div class="why-choose-us-image">
                 <div class="why-choose-us-titles">
@@ -91,19 +137,19 @@
                         <img src="justbuildit-tiny/badge 1.svg" alt="High Quality Icon">
                         <p>High Quality</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic debitis officia, atque modi magni asperiores, dolores odit eos saepe architecto minima, odio placeat itaque?</p>
-                        <button>ENQUIRE NOW</button>
+                        <a href="#contact"><button>ENQUIRE NOW</button></a>
                     </div>
                     <div class="why-choose-us-card">
                         <img src="justbuildit-tiny/trust 1.svg" alt="20 years of trust Icon">
                         <p>20 Years of Trust</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic debitis officia, atque modi magni asperiores, dolores odit eos saepe architecto minima, odio placeat itaque?</p>
-                        <button>ENQUIRE NOW</button>
+                        <a href="#contact"><button>ENQUIRE NOW</button></a>
                     </div>
                     <div class="why-choose-us-card">
                         <img src="justbuildit-tiny/deadline 1.svg" alt="Finished on time Icon">
                         <p>Finished on Time</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic debitis officia, atque modi magni asperiores, dolores odit eos saepe architecto minima, odio placeat itaque?</p>
-                        <button>ENQUIRE NOW</button>
+                        <a href="#contact"><button>ENQUIRE NOW</button></a>
                     </div>
                 </div>
             </div>
@@ -111,10 +157,11 @@
     </section>
     <section class="second-text-section">
         <div class="wrapper">
+            <p class="watermark">HAPPY</p>
             <h2>Join our long list of <strong>happy</strong> customers.</h2>
         </div>
     </section>
-    <section class="our-work-section">
+    <section id="our-work" class="our-work-section">
         <div class="wrapper">
             <div class="our-work-image">
                 <img src="justbuildit-tiny/IMG_4302.png" alt="Houses Built by Just Build It Guernsey">
@@ -123,6 +170,7 @@
                     <h2>Our Past Work</h2>
                 </div>
             </div>
+            <p class="watermark">PROJECTS</p>
             <div class="our-work-grid">
                 <div class="our-work-grid-item"><img src="jbi-grid-new/Rectangle 20.png" alt="Our Previous Building Work Image"></div>
                 <div class="our-work-grid-item"><img src="jbi-grid-new/Rectangle 21.png" alt="Our Previous Building Work Image"></div>
@@ -131,11 +179,12 @@
                 <div class="our-work-grid-item"><img src="jbi-grid-new/Rectangle 24.png" alt="Our Previous Building Work Image"></div>
                 <div class="our-work-grid-item"><img src="jbi-grid-new/Rectangle 25.png" alt="Our Previous Building Work Image"></div>
             </div>
-            <button>ENQUIRE NOW</button>
+            <a href="#contact"><button>ENQUIRE NOW</button></a>
         </div>
     </section>
-    <section class="testimonials-section">
+    <section id="testimonials" class="testimonials-section">
         <div class="wrapper">
+            <p class="watermark">REVIEWS</p>
             <div class="testimonials-titles">
                 <p>TESTIMONIALS</p>
                 <h2>Testimonials from Clients</h2>
@@ -147,7 +196,7 @@
                         <p>JORDAN MAUGER</p>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id blanditiis magni culpa laborum ut dolores, omnis quibusdam inventore impedit laboriosam eos quia ipsa fuga!</p>
-                    <button>ENQUIRE NOW</button>
+                    <a href="#contact"><button>ENQUIRE NOW</button></a>
                 </div>
                 <div class="testimonials-card">
                     <div class="testimonials-card-titles">
@@ -155,7 +204,7 @@
                         <p>STEVE OSWALD</p>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id blanditiis magni culpa laborum ut dolores, omnis quibusdam inventore impedit laboriosam eos quia ipsa fuga!</p>
-                    <button>ENQUIRE NOW</button>
+                    <a href="#contact"><button>ENQUIRE NOW</button></a>
                 </div>
                 <div class="testimonials-card">
                     <div class="testimonials-card-titles">
@@ -163,19 +212,20 @@
                         <p>PETER TIEL</p>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id blanditiis magni culpa laborum ut dolores, omnis quibusdam inventore impedit laboriosam eos quia ipsa fuga!</p>
-                    <button>ENQUIRE NOW</button>
+                    <a href="#contact"><button>ENQUIRE NOW</button></a>
                 </div>
             </div>
         </div>
     </section>
     <section class="contact-section">
         <div class="wrapper">
+            <p class="watermark">CONTACT</p>
             <div class="contact-titles">
                 <p>CONTACT</p>
                 <h2>Contact Mike Now For a Free Quote</h2>
             </div>
-            <div class="contact-image">
-                <form action="POST">
+            <div id="contact" class="contact-image">
+                <form  action="POST">
                     <fieldset>
                         <label for="name">NAME:</label>
                         <input type="name" id="name" name="name">
@@ -204,11 +254,21 @@
                     <img src="justbuildit-tiny/Screenshot 2023-03-01 at 09.32 1.png" alt="Just Build It Guernsey Logo">
                 </div>
                 <ul>
-                    <li>HOME</li>
-                    <li>WHY US</li>
-                    <li>SERVICES</li>
-                    <li>OUR WORK</li>
-                    <li>TESTIMONIALS</li>
+                    <a href="#">
+                        <li>HOME</li>
+                    </a>
+                    <a href="#why-us">
+                        <li>WHY US</li>
+                    </a>
+                    <a href="#services">
+                        <li>SERVICES</li>
+                    </a>
+                    <a href="#our-work">
+                        <li>OUR WORK</li>
+                    </a>
+                    <a href="#testimonials">
+                        <li>TESTIMONIALS</li>
+                    </a>
                 </ul>
                 <div class="social-icons">
                     <img src="justbuildit-tiny/facebook-svgrepo-com(2).svg" alt="Facebook icon for just build it">
@@ -217,9 +277,7 @@
             </div>
             <div class="footer-bottom">
                 <p>2023 All Rights Reserved</p>
-                <p>Privacy Policy</p>
-                <p>Terms of Services</p>
-                <p>Cookie Settings</p>
+            
             </div>
         </div>
     </footer>
