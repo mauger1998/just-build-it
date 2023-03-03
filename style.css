@@ -636,6 +636,11 @@ strong {
         padding-inline:2rem;
     }
 }
+@media (max-width:543px) {
+    .testimonials-section .wrapper {
+       gap:8rem;
+    }
+}
 @media (max-width:500px) {
     .testimonials-titles h2 {
         font-size:var(--mobile-heading-two);
@@ -901,6 +906,7 @@ button {
     top:0;
     line-height:1 !important;
     pointer-events:none;
+    z-index:-10000 !important;
 }
 .first-text-section .watermark {
     left:0;
