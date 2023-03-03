@@ -57,6 +57,7 @@ header {
     position:fixed;
     background-color:#FFFFFF50;
     backdrop-filter:blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     z-index:11;
 }
 .header-wrapper {
@@ -137,6 +138,7 @@ main .wrapper {
     background-color:var(--brown);
     color:white;
 }
+
 @media (max-width:930px) {
     .hero-image p {
         width:90%;
@@ -709,6 +711,7 @@ textarea {
     border:none;
     background-color:#FFFFFF80;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding:0.75rem;
     font-size:var(--text);
 }
@@ -897,6 +900,7 @@ button {
     position:absolute;
     top:0;
     line-height:1 !important;
+    pointer-events:none;
 }
 .first-text-section .watermark {
     left:0;
@@ -908,6 +912,12 @@ button {
 }
 .contact-section .watermark {
     left:0;
+}
+.testimonials-section .watermark {
+    left:-3% !important;
+}
+.wrapper {
+    overflow:hidden;
 }
 
 /***********************/
@@ -933,6 +943,7 @@ button {
     transition:opacity 0.5s, transform 0.5s;
     pointer-events:none;
     gap:2rem;
+    border-radius:24px;
 
    
 }
