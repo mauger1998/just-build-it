@@ -186,9 +186,10 @@ main .wrapper {
     .hero-image p {
         width:100%;
     }
-    .hero-image button {
+    .hero-image button,
+    .hero-image a {
         width:100%;
-        padding-inline:0;
+        padding-inline:0rem;
     }
 }
 @media (max-width:322px) {
@@ -200,7 +201,6 @@ main .wrapper {
     }
     .hero-image button {
         width:100%;
-        padding-inline:0;
     }
 }
 /***** Service ****/
