@@ -55,7 +55,7 @@ h2 {
 /**** Header *****/
 header {
     position:fixed;
-    background-color:#FFFFFF50;
+    background-color:#FFFFFF;
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index:11;
@@ -118,6 +118,7 @@ main .wrapper {
     gap:1rem;
     background-image:linear-gradient(#00000050, #00000050 100%), url(justbuildit-tiny/IMG_6608.png);
     background-size:cover;
+    background-position:center;
     background-repeat: no-repeat;
 }
 .hero-image h1 {
@@ -233,7 +234,8 @@ main .wrapper {
     
 }
 .card-tag {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    border-radius:24px 0px 24px 24px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    
+    border-radius:24px 0px 24px 24px;
     margin-top:-4rem;
     background-color:white;
     z-index:1 !important;
@@ -261,9 +263,7 @@ main .wrapper {
 span {
     font-size:1.25rem;
 }
-.card-tag button:hover {
 
-}
 
 
 @media (max-width:1229px){
@@ -341,6 +341,7 @@ strong {
     background-image: linear-gradient(#00000030, #00000030), url(justbuildit-tiny/IMG_6626.png);
     background-size:cover;
     background-repeat:no-repeat;
+    background-position:center;
 }
 .why-choose-us-titles {
     display:flex;
@@ -898,7 +899,7 @@ button {
     position:relative;
 }
 .watermark {
-    font-size:300px !important;
+    font-size:200px !important;
     font-weight:900;
     letter-spacing:2rem !important;
     opacity:0.04;
@@ -909,21 +910,123 @@ button {
     z-index:-10000 !important;
 }
 .first-text-section .watermark {
-    left:0;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+.second-text-section .watermark {
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
 }
 .our-work-section .watermark {
-    top:35%;
+    top:38%;
     z-index:-1;
-    left:-4%;
+    left:4%;
 }
 .contact-section .watermark {
-    left:0;
-}
+    left:50%;
+    top:10%;
+    transform: translate(-50%, -50%);}
+
 .testimonials-section .watermark {
-    left:-3% !important;
-}
+    left:50%;
+    top:20%;
+    transform: translate(-50%, -50%);}
 .wrapper {
     overflow:hidden;
+}
+@media (max-width:1092px) {
+    .watermark {
+        font-size:150px !important;
+    }
+    .what-we-do-section .watermark {
+        top:4%;
+    }
+    .first-text-section .watermark {
+        top:35%;
+    }
+    .second-text-section .watermark {
+        top:60%;
+    }
+    .testimonials-section .watermark {
+        top:13%;
+    }
+    .contact-section .watermark {
+        top:12%;
+    }
+}
+@media (max-width:783px) {
+    .watermark {
+        font-size:100px !important;
+    }
+    .what-we-do-section .watermark {
+        top:6%;
+    }
+    .first-text-section .watermark {
+        top:35%;
+    }
+    .second-text-section .watermark {
+        top:60%;
+    }
+    .testimonials-section .watermark {
+        top:10%;
+    }
+    .our-work-section .watermark {
+        top:27%;
+    }
+    .contact-section .watermark {
+        top:12%;
+    }
+}
+@media (max-width:700px) {
+    .watermark {
+        font-size:100px !important;
+    }
+    .what-we-do-section .watermark {
+        top:2%;
+    }
+    .first-text-section .watermark {
+        top:35%;
+        display:none;
+    }
+    .second-text-section .watermark {
+        top:60%;
+    }
+    .testimonials-section .watermark {
+        top:10%;
+    }
+    .our-work-section .watermark {
+        top:27%;
+    }
+    .contact-section .watermark {
+        top:12%;
+    }
+}
+@media (max-width:598px) {
+    .watermark {
+        font-size:75px !important;
+        display:none;
+    }
+    .what-we-do-section .watermark {
+        top:2%;
+    }
+    .first-text-section .watermark {
+        top:35%;
+        display:none;
+    }
+    .second-text-section .watermark {
+        top:60%;
+    }
+    .testimonials-section .watermark {
+        top:10%;
+    }
+    .our-work-section .watermark {
+        top:27%;
+    }
+    .contact-section .watermark {
+        top:12%;
+    }
 }
 
 /***********************/
