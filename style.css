@@ -251,6 +251,7 @@ span {
 .first-text-section {
     background-color:var(--new-colour);
     color:white;
+    padding-block:0;
 }
 
 .first-text-section .wrapper h2 {
@@ -258,6 +259,7 @@ span {
     font-size:var(--heading-two);
     line-height:1.5;
     font-weight:300;
+    padding-block:6rem;
 }
 strong {
     font-weight:700;
@@ -1082,3 +1084,5 @@ button {
 .watermark {
     display:none;
 }
+/*****/
+s
