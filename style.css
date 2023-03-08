@@ -7,6 +7,7 @@
     --mobile-heading-one:50px;
     --mobile-heading-two:30px;
     --mobile-text:14px;
+    --new-colour:#38618C;
 }
 *,
 *::before,
@@ -17,13 +18,13 @@
     font-family: 'Lato', sans-serif;
 }
 button {
-    background-color:transparent;
-    border:2px solid var(--brown);
+    background-color:var(--new-colour) !important;
+    border:2px solid var(--new-colour) ;
     border-radius:2rem;
     padding:0.5rem 1rem;
     font-weight:700;
     cursor:pointer;
-    color:var(--brown);
+    color:white;
 }
 ul {
     list-style:none;
@@ -106,6 +107,12 @@ main .wrapper {
     justify-content: center;
    
 }
+main {
+    background-image:linear-gradient(#00000070, #00000070 100%), url(justbuildit-tiny/IMG_6608.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
 .hero-image {
     width:100%;
     padding:12rem 2rem;
@@ -116,10 +123,7 @@ main .wrapper {
     align-items: center;
     justify-content: center;
     gap:1rem;
-    background-image:linear-gradient(#00000050, #00000050 100%), url(justbuildit-tiny/IMG_6608.png);
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
+   
 }
 .hero-image h1 {
     font-size:var(--heading-one);
@@ -301,6 +305,10 @@ span {
     }
 }
 /********** First Text *****/
+.first-text-section {
+    background-color:var(--new-colour);
+    color:white;
+}
 
 .first-text-section .wrapper h2 {
     text-align:center;
@@ -324,7 +332,13 @@ strong {
         font-size:var(--mobile-heading-two);
     }
 }
-/*********************** Why Us Cards */  
+/*********************** Why Us Cards */ 
+.why-choose-us-section {
+    /* background-image: linear-gradient(#00000030, #00000030), url(justbuildit-tiny/IMG_6626.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center; */
+} 
 
 .why-choose-us-section .wrapper {
     display:flex;
@@ -338,10 +352,7 @@ strong {
     flex-direction: column;
     gap:6rem;
     padding-top:4rem;
-    background-image: linear-gradient(#00000030, #00000030), url(justbuildit-tiny/IMG_6626.png);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center;
+    
 }
 .why-choose-us-titles {
     display:flex;
@@ -351,11 +362,11 @@ strong {
 }
 .why-choose-us-titles h2 {
     font-size:var(--heading-two);
-    color:white;
+    color:black
 }
 .why-choose-us-titles p {
     font-size:var(--text);
-    color:white;
+    color:black;
 }
 .why-choose-us-cards {
     display:grid;
@@ -371,7 +382,6 @@ strong {
     gap:1rem;
     border-radius:24px;
     background-color:white;
-    margin-bottom:-6rem;
 }
 .why-choose-us-card p:nth-of-type(1) {
     font-size:30px;
@@ -436,12 +446,16 @@ strong {
 
 }
 /***** Second Text *****/
+.second-text-section {
+    background-color:var(--new-colour);
+    color:white;
+}
 .second-text-section .wrapper {
-    padding-top:9rem;
     display:flex;
     align-items: center;
     justify-content: center;
     text-align:center;
+    
 }
 .second-text-section .wrapper h2 {
     font-size:var(--heading-two);
@@ -554,6 +568,9 @@ strong {
     }
 }
 /******* Testimonials ********/
+.testimonials-section {
+    background-color: var(--new-colour);
+}
 .testimonials-section .wrapper {
     display:flex;
     flex-direction: column;
@@ -565,6 +582,7 @@ strong {
     width:100%;
     flex-direction: column;
     align-items: center;
+    color:white;
 }
 .testimonials-titles h2 {
     font-size:var(--heading-two);
@@ -587,6 +605,7 @@ strong {
     gap:1rem;
     border-radius:24px;
     width:100%;
+    background-color:white;
 
 }
 .testimonials-card-titles {
@@ -1111,3 +1130,7 @@ button {
     }
 }
 /***********************/
+
+.watermark {
+    display:none;
+}
