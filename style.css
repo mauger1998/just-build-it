@@ -103,7 +103,6 @@ header {
 /****** Hero *******/
 main .wrapper {
     padding-top:18rem;
-    padding-inline:0;
     padding-bottom:18rem;
     overflow:visible;
     display:flex;
@@ -121,7 +120,7 @@ video,
 }
 .rectangle {
     background-color:black;
-    opacity:0.6;
+    opacity:0.55;
     width:100%;
     height:100%;
     z-index:1;
@@ -141,15 +140,51 @@ video,
     gap:1rem;
 }
 .hero-content p {
-    width:50%;
+    width:100%;
+    max-width:60ch;
     text-align:center;
 }
 h1 {
     color:white;
     font-size:var(--heading-one);
-    width:60%;
+    width:100%;
     text-align:center;
     font-weight:700;
+}
+
+@media (max-width:864px) {
+    h1 {
+        font-size: 55px;
+    }
+}
+@media (max-width:786px) {
+    h1 {
+        font-size: var(--mobile-heading-one);
+    }
+    br {
+        display:none;
+    }
+}
+@media (max-width:700px) {
+ main .wrapper {
+    padding-inline:2rem;
+ }
+}
+@media (max-width:500px) {
+ main .wrapper {
+    padding-inline:1rem;
+ }
+ main .wrapper P {
+    font-size:var(--mobile-text);
+ }
+}
+@media (max-width:435px) {
+    h1 {
+        font-size: 45px;
+    }
+    br {
+        display:none;
+    }
 }
 /***** Service ****/
 .what-we-do-section .wrapper {
@@ -163,9 +198,19 @@ h1 {
     flex-direction: column;
     align-items: center;
     align-self:center;
+    overflow:visible !important;
 }
 .what-we-do-titles h2 {
     font-size:var(--heading-two);
+    position:relative;
+    overflow:visible !important;
+}
+.line {
+    position:absolute;
+    top:80%;
+    right:-5%;
+    z-index:-1;
+    width:150px;
 }
 .what-we-do-titles p {
     font-size:var(--text);
@@ -305,10 +350,24 @@ strong {
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+
+
+
 .why-choose-us-titles h2 {
     font-size:var(--heading-two);
-    color:black
+    color:black;
+   
 }
+
+
+
+
+
+
 .why-choose-us-titles p {
     font-size:var(--text);
     color:black;
@@ -400,6 +459,7 @@ strong {
     align-items: center;
     justify-content: center;
     text-align:center;
+    padding-block:8rem;
     
 }
 .second-text-section .wrapper h2 {
@@ -420,9 +480,7 @@ strong {
     }
 }
 /************** Our Work Section ****/
-.our-work-section {
 
-}
 .our-work-section .wrapper {
     display:flex;
     flex-direction: column;
@@ -474,6 +532,7 @@ strong {
     padding:1rem 4rem;
     background-color:var(--brown);
     color:white;
+    margin-top:2rem;
 }
 @media (max-width:1050px) {
     .our-work-grid {
@@ -871,12 +930,13 @@ button {
     font-size:200px !important;
     font-weight:900;
     letter-spacing:2rem !important;
-    opacity:0.04;
+    opacity:0.1;
     position:absolute;
     top:0;
     line-height:1 !important;
     pointer-events:none;
-    z-index:-10000 !important;
+    z-index:0 !important;
+    color:white;
 }
 .first-text-section .watermark {
     left:50%;
@@ -884,31 +944,14 @@ button {
     transform: translate(-50%, -50%);
 }
 .second-text-section .watermark {
-    left:50%;
     top:50%;
+    left:50%;
     transform: translate(-50%, -50%);
-}
-.our-work-section .watermark {
-    top:38%;
-    z-index:-1;
-    left:4%;
-}
-.contact-section .watermark {
-    left:50%;
-    top:10%;
-    transform: translate(-50%, -50%);}
 
-.testimonials-section .watermark {
-    left:50%;
-    top:20%;
-    transform: translate(-50%, -50%);}
-.wrapper {
-    overflow:hidden;
 }
+
 @media (max-width:1092px) {
-    .watermark {
-        font-size:150px !important;
-    }
+   
     .what-we-do-section .watermark {
         top:4%;
     }
@@ -926,9 +969,7 @@ button {
     }
 }
 @media (max-width:783px) {
-    .watermark {
-        font-size:100px !important;
-    }
+   
     .what-we-do-section .watermark {
         top:6%;
     }
@@ -949,9 +990,7 @@ button {
     }
 }
 @media (max-width:700px) {
-    .watermark {
-        font-size:100px !important;
-    }
+   
     .what-we-do-section .watermark {
         top:2%;
     }
@@ -973,10 +1012,7 @@ button {
     }
 }
 @media (max-width:598px) {
-    .watermark {
-        font-size:75px !important;
-        display:none;
-    }
+    
     .what-we-do-section .watermark {
         top:2%;
     }
@@ -1081,8 +1117,3 @@ button {
 }
 /***********************/
 
-.watermark {
-    display:none;
-}
-/*****/
-s
