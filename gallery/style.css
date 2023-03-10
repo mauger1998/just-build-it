@@ -389,3 +389,27 @@ footer ul li {
         padding-inline:1rem;
     }
 }
+/***********************/
+
+.blue {
+    color:var(--new-colour) !important;
+    font-weight:700;
+}
+.footer-bottom {
+    align-items:flex-end;
+    padding-block:2rem;
+}
+
+.author-wrapper img {
+    width:100px;
+}
+.author-wrapper p {
+    line-height:1;
+}
+.author-wrapper a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:0.75rem;
+}
