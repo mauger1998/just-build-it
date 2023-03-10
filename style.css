@@ -361,7 +361,10 @@ strong {
 .why-choose-us-titles h2 {
     font-size:var(--heading-two);
     color:black;
-   
+    position:relative;
+}
+.why-choose-us-titles h2 .line {
+    width:225px;
 }
 
 
@@ -499,6 +502,10 @@ strong {
 }
 .image-titles h2 {
     font-size:var(--heading-two);
+    position:relative;
+}
+.image-titles .line {
+    width:125px;
 }
 .our-work-grid {
     width:100%;
@@ -1026,3 +1033,7 @@ button {
 }
 /***********************/
 
+.blue {
+    color:var(--new-colour) !important;
+    font-weight:700;
+}
