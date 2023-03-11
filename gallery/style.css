@@ -290,15 +290,47 @@ h1 {
     object-fit:cover;
     aspect-ratio:1/1;
 }
-.first-project,
-.second-project,
-.third-project,
-.fourth-project {
+.first-project {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:6rem;
+}
+.titles {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titles h2 {
+    font-size:var(--heading-two);
+}
+.titles p:nth-child(1) {
+    color:var(--new-colour);
+    font-weight:700;
+}
+.titles p:nth-of-type(2) {
+    font-weight:300;
+    margin-top:1rem;
+}
+.first,
+.second,
+.third,
+.fourth{
     display:grid;
     width:100%;
     gap:1rem;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr) );
 }
+.second img:nth-child(5),
+.third img:nth-child(5) {
+    grid-column: 2 / span 2;
+    width:50%;
+    place-self:center;
+}
+.fourth {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
+}
+
 @media (max-width:700px) {
     .past-work .wrapper {
         padding-inline:2rem;
