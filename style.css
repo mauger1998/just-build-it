@@ -109,6 +109,7 @@ main .wrapper {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-height:850px;
 }
 video,
 .rectangle {
@@ -190,21 +191,34 @@ h1 {
 /***** Service ****/
 .what-we-do-section .wrapper {
     display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:6rem;
+    align-items: center;
+    gap:2rem;
+}
+.what-we-do-section img {
+    width:50% !important;
+    border-radius:24px;
 }
 .what-we-do-titles {
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     align-self:center;
     overflow:visible !important;
+    width:50%;
+}
+.what-we-do-titles p:nth-of-type(2) {
+    width:100%;
+    text-align:left;
+    font-weight:300 !important;
+    margin-top:2rem;
 }
 .what-we-do-titles h2 {
     font-size:var(--heading-two);
     position:relative;
     overflow:visible !important;
+}
+.what-we-do-titles button {
+    margin-top:2rem;
 }
 .line {
     position:absolute;
@@ -216,83 +230,53 @@ h1 {
 .what-we-do-titles p {
     font-size:var(--text);
 }
-.what-we-do-cards {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:2rem;
+@media (max-width:1270px) {
+    .what-we-do-titles p:nth-of-type(2) {
+        margin-top:1rem;
+    }
 }
-.what-we-do-card img {
-    border-radius:24px;
-    width:100%;
-    
+@media (max-width:1141px) {
+    .what-we-do-titles button {
+        margin-top:1rem;
+    }
 }
-.card-tag {
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    
-    border-radius:24px 0px 24px 24px;
-    margin-top:-4rem;
-    background-color:white;
-    z-index:1 !important;
-    position:relative;
-    padding:1rem;
-    padding-top:1.5rem;
-    width:90%;
-    margin-left:15%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-align:center;
-}
-.card-tag p {
-    font-weight:bold;
-    font-size:var(--card-titles);
-}
-.card-tag button {
-    border:none !important;
-    background-color:transparent !important;
-    color:var(--new-colour) !important;
-    border-radius:0;
-    
-}
-span {
-    font-size:1.25rem;
-}
-
-
-
-@media (max-width:1229px){
-    .what-we-do-cards {
-        grid-template-columns:1fr 1fr;
-        width:100%;
+@media (max-width:1051px) {
+    .what-we-do-section .wrapper {
+        flex-direction: column;
+    }
+    .what-we-do-titles,
+    .what-we-do-section img {
+        width:100% !important;
+    }
+    .what-we-do-titles button {
+        margin-top:2rem;
+    }
+    .what-we-do-titles p:nth-of-type(2) {
+        margin-top:2rem;
     }
 }
 @media (max-width:700px) {
-    .what-we-do-cards {
-        grid-template-columns:1fr;
-    }
     .what-we-do-section .wrapper {
         padding-inline:2rem;
-    }
-    .card-tag {
-        margin-left:12%;
     }
 }
 @media (max-width:500px) {
     .what-we-do-section .wrapper {
         padding-inline:1rem;
     }
-    .what-we-do-tiles h2 {
-        font-size:var(--mobile-heading-two);
+    .what-we-do-section h2 {
+        font-size:var(--mobile-heading-two) !important;
     }
-    .what-we-do-titles p {
-        font-size:var(--mobile-text);
-    }
-    .card-tag p {
-        font-size:20px;
-    }
-    .card-tag {
-        margin-left:2.75rem;
+    .what-we-do-titles p:nth-of-type(2) {
+        font-size:var(--mobile-text) !important;
     }
 }
+ 
+
+
+
+
+
 /********** First Text *****/
 .first-text-section {
     background-color:var(--new-colour);
@@ -305,14 +289,24 @@ span {
     font-size:var(--heading-two);
     line-height:1.5;
     font-weight:300;
-    padding-block:6rem;
+    padding-block:4rem;
 }
 strong {
     font-weight:700;
 }
+@media (max-width:1050px) {
+    .first-text-section h2 {
+        font-size:30px !important;
+    }
+}
 @media (max-width:700px) {
     .first-text-section .wrapper {
         padding-inline:2rem;
+    }
+}
+@media (max-width:649px) {
+    .first-text-section h2 {
+        font-size:25px !important;
     }
 }
 @media (max-width:500px) {
@@ -324,12 +318,7 @@ strong {
     }
 }
 /*********************** Why Us Cards */ 
-.why-choose-us-section {
-    /* background-image: linear-gradient(#00000030, #00000030), url(justbuildit-tiny/IMG_6626.png);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center; */
-} 
+
 
 .why-choose-us-section .wrapper {
     display:flex;
@@ -392,7 +381,7 @@ strong {
     background-color:white;
 }
 .why-choose-us-card p:nth-of-type(1) {
-    font-size:30px;
+    font-size:25px;
     font-weight:700;
 }
 .why-choose-us-card p:nth-of-type(2) {
@@ -685,9 +674,9 @@ strong {
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    gap:0rem;
-    padding-block:6rem;
-    padding-inline:0;
+    gap:6rem;
+    padding:6rem 4rem;
+
 }
 .contact-titles {
     display:flex;
@@ -705,7 +694,6 @@ strong {
 }
 .contact-image {
     width:100%;
-    padding:6rem 4rem;
     
 }
 form {
@@ -940,12 +928,50 @@ button {
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
+    font-size:300px !important;
 }
 .second-text-section .watermark {
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
 
+}
+/*********/
+.intro-section .wrapper {
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width:100%;
+}
+.intro-section p {
+    font-weight:300;
+    width:50%;
+}
+.intro-section h2 {
+    font-size:var(--mobile-heading-two)
+}
+@media (max-width:1050px) {
+    .intro-section .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap:2rem;
+    }
+    .intro-section p {
+        width:100%;
+    }
+}
+@media (max-width:700px) {
+    .intro-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .intro-section .wrapper {
+        padding-inline:1rem;
+    }
+    .intro-section p {
+        font-size:var(--mobile-text);
+    }
 }
 
 
