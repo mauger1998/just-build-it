@@ -334,7 +334,7 @@ footer .wrapper {
     display:flex;
     align-items: center;
     width:100%;
-    justify-content: center;
+    justify-content: flex-end;
     gap:2rem;
 }
 .social-icons {
