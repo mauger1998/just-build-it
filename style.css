@@ -101,12 +101,10 @@ header {
     }
 }
 /****** Hero *******/
-main {
-    max-height:850px;
-}
+
 main .wrapper {
     padding-top:18rem;
-    padding-bottom:12.25rem;
+    padding-bottom:18.25rem;
     overflow:visible;
     display:flex;
     flex-direction: column;
@@ -876,7 +874,7 @@ footer ul li {
     .footer-bottom {
         flex-direction: column-reverse;
         justify-content: center;
-        align-items: center;
+        align-items: center !important;
         gap:4rem;
     }
 }

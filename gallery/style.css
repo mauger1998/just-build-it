@@ -447,7 +447,7 @@ footer ul li {
     .footer-bottom {
         flex-direction: column-reverse;
         justify-content: center;
-        align-items: center;
+        align-items: center !important;
         gap:4rem;
     }
 }
