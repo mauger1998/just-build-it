@@ -106,7 +106,7 @@ header {
 main {
     overflow:hidden !important;
     max-height:850px;
-    background-image:  url(../justbuildit-tiny/testheromike.png);
+    background-image:  url(../justbuildit-tiny/pink-stairs.png);
     background-repeat: no-repeat;
     background-size:cover;;
     background-position: center;
@@ -270,14 +270,15 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     gap:2rem;
-    padding-block:12rem;
+    padding-block:6rem;
 }
 .past-work img {
     width:100%;
     object-fit:cover;
     aspect-ratio:1/1;
 }
-.first-project {
+.first-project,
+.blue {
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -312,19 +313,19 @@ h1 {
     gap:1rem;
     grid-template-columns:repeat(auto-fit, minmax(250px, 1fr) );
 }
-.second,
+
 .third {
     grid-template-columns:repeat(auto-fit, minmax(350px, 1fr) );
 
 }
-.second img:nth-child(4),
+
 .third img:nth-child(4) {
    grid-column:1 / span 2;
    width:50%;
    place-self:center;
    grid-row:2;
 }
-.second img:nth-child(5),
+
 .third img:nth-child(5) {
    grid-column: 2 / span 2;
    width:50%;
@@ -461,4 +462,49 @@ footer ul li {
     flex-direction: column;
     justify-content: center;
     gap:0.75rem;
+}
+
+
+
+.first-titles {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.first-titles p {
+    font-weight:bold;
+    color:white;
+    color:var(--new-colour);
+}
+.first-titles h2 {
+    font-size:var(--heading-two);
+    color:black;
+}
+
+.text {
+    background-color:var(--new-colour);
+    color:white;
+}
+.text .wrapper {
+    position:relative !important;
+    padding-block:12rem;
+
+}
+.text h2 {
+    font-size:var(--heading-two)
+}
+.text .watermark {
+    font-size:300px !important;
+    font-weight:900;
+    letter-spacing:0rem !important;
+    opacity:0.05;
+    position:absolute;
+    line-height:1 !important;
+    pointer-events:none;
+    z-index:0 !important;
+    color:white;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
 }

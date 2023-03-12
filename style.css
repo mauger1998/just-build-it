@@ -101,9 +101,12 @@ header {
     }
 }
 /****** Hero *******/
+main {
+    max-height:850px;
+}
 main .wrapper {
     padding-top:18rem;
-    padding-bottom:18rem;
+    padding-bottom:12.25rem;
     overflow:visible;
     display:flex;
     flex-direction: column;
@@ -908,12 +911,24 @@ button {
     font-size:200px !important;
     font-weight:900;
     letter-spacing:0rem !important;
-    opacity:0.1;
+    opacity:0.05;
     position:absolute;
     line-height:1 !important;
     pointer-events:none;
     z-index:0 !important;
     color:white;
+}
+.intro-section .wrapper {
+    position:relative !important;
+}
+.intro-section .watermark {
+    font-weight:900;
+    font-size:300px !important;
+    left:25%;
+    letter-spacing: 1rem !important;
+    top:50%;
+    border:2px solid green !important;
+    transform: translate(-50%, -50%);
 }
 .testimonials-titles {
     position:relative;
@@ -936,11 +951,17 @@ button {
 
 }
 /*********/
+.intro-section {
+    background-color:var(--new-colour);
+    color:white;
+    
+}
 .intro-section .wrapper {
     display:flex;
     align-items: flex-start;
     justify-content: space-between;
     width:100%;
+  
 }
 .intro-section p {
     font-weight:400;
@@ -949,6 +970,7 @@ button {
 .intro-section h2 {
     font-size:var(--mobile-heading-two)
 }
+
 @media (max-width:1050px) {
     .intro-section .wrapper {
         flex-direction: column;
