@@ -555,3 +555,9 @@ footer ul li {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+section {
+    overflow-x:hidden !important;
+}

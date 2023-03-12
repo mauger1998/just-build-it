@@ -26,6 +26,9 @@ button {
     cursor:pointer;
     color:white;
 }
+section {
+    overflow-x:hidden !important;
+}
 ul {
     list-style:none;
 }
