@@ -929,6 +929,7 @@ button {
 .intro-section .wrapper {
     position:relative !important;
     z-index:10000000000 !important;
+    overflow-y:hidden !important;
 }
 .intro-section .watermark {
     font-weight:900;
