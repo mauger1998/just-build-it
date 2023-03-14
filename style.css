@@ -108,7 +108,7 @@ header {
 
 main .wrapper {
     padding-top:18rem;
-    padding-bottom:18.25rem;
+    padding-bottom:12.25rem;
     overflow:visible;
     display:flex;
     flex-direction: column;
@@ -921,8 +921,14 @@ button {
     z-index:0 !important;
     color:white;
 }
+.intro-section {
+    position:relative !important;
+    z-index:10000000000 !important;
+}
+
 .intro-section .wrapper {
     position:relative !important;
+    z-index:10000000000 !important;
 }
 .intro-section .watermark {
     font-weight:900;
