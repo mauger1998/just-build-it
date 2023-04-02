@@ -14,20 +14,3 @@ document.addEventListener("click", (e) => {
     })
 })
 
-// CMS
-const URLTWO = `https://q5cqw5we.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22testimonial%22%5D%20`;
-
-fetch(URLTWO)
-.then((res) => res.json())
-.then(({ result }) => {
-    const testimonialCardsJob = document.querySelectorAll(".testimonials-card-titles p:nth-of-type(1)")
-    const testimonialCardsName = document.querySelectorAll(".testimonials-card-titles p:nth-of-type(2)")
-    const review = document.querySelectorAll(".testimonials-card > p")
-
-    result.forEach((result, index) => {
-        testimonialCardsJob[index].textContent = result.job
-        testimonialCardsName[index].textContent = result.name
-        review[index].textContent = result.review
-    })
-
-})
