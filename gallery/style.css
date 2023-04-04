@@ -106,7 +106,7 @@ header {
 main {
     overflow:hidden !important;
     max-height:850px;
-    background-image:linear-gradient(#00000060, #00000060),  url(../jbi-grid-new/gallery-hero.png);
+    background-image:linear-gradient(#00000060, #00000060),  url(../jbi-grid-new/gallery-her.png);
     background-repeat: no-repeat;
     background-size:cover;;
     background-position: center;
@@ -495,6 +495,7 @@ footer ul li {
 
 .first-titles {
     display:flex;
+
     align-items: center;
     justify-content: center;
     flex-direction: column;
