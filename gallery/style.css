@@ -114,7 +114,7 @@ main {
 }
 main .wrapper {
     padding-top:18rem;
-    padding-bottom:18rem;
+    padding-bottom:12rem;
     overflow:visible;
     display:flex;
     flex-direction: column;
@@ -515,7 +515,7 @@ footer ul li {
 }
 .text .wrapper {
     position:relative !important;
-    padding-block:12rem;
+    padding-block:8rem;
 
 }
 .text h2 {
