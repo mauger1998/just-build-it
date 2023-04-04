@@ -516,6 +516,7 @@ footer ul li {
 .text .wrapper {
     position:relative !important;
     padding-block:8rem;
+    overflow:hidden;
 
 }
 .text h2 {
