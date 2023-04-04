@@ -190,7 +190,7 @@ header {
 /****** Hero *******/
 
 main {
-    background-image: linear-gradient(#00000040, #00000040), url(../justbuildit-tiny/3a581901-9745-4599-8d14-eed68ab1f707.JPG);
+    background-image: linear-gradient(#00000060, #00000060), url(../jbi-grid-new/test-hero.png);
     background-repeat:no-repeat;
     background-size:cover;
 
@@ -254,6 +254,11 @@ h1 {
     padding-inline:2rem;
  }
 }
+@media (max-width:628px) {
+    main .wrapper p {
+        max-width:45ch;
+    }
+}
 @media (max-width:500px) {
  main .wrapper {
     padding-inline:1rem;
@@ -274,6 +279,20 @@ h1 {
 .filler-section .wrapper p {
     font-size:var(--heading-two);
     text-align:center;
+}
+@media (max-width:700px) {
+    .filler-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .filler-section .wrapper {
+        padding-inline:1rem;
+    }
+    .filler-section .wrapper p {
+        font-size:var(--mobile-heading-two);
+        text-align:center;
+    }
 }
 /***********************/
 /***********************/
@@ -356,16 +375,55 @@ h1 {
     gap:2rem;
 }
 
+.filler-section {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1038px) {
+    .testimonials-section .wrapper {
+        padding-inline:2rem;
+    }
+    .wrapper > .first-content p:nth-of-type(2) {
+        align-self:flex-start;
+    }
+    .wrapper > .first-content p {
+        width:100%;
+    }
+}
+@media (max-width:700px) {
+    .testimonials-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .testimonials-section .wrapper {
+        padding-inline:1rem;
+    }
+    .first-content p {
+        font-size:var(--mobile-text);
+    } 
+    .accordian {
+        padding-inline:1rem;
+    }
+}
+
 /* Image */
 
 
 .image {
     background-image:linear-gradient(to bottom, #38618C, #38618C00 80%), linear-gradient(to top, #38618C, #38618C00 80%), url(../justbuildit-tiny/548fef73-b649-4739-869d-b6d8029f3dd1.JPG);
-    padding-block:12rem;
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
+   
+}
+.image .wrapper {
     padding-inline:4rem;
+    padding-block:12rem;
+
 }
 .image p {
     font-size:var(--heading-two);
@@ -373,16 +431,17 @@ h1 {
     text-align:center;
 }
 @media (max-width:700px) {
-    .image {
+    .image .wrapper {
         padding-inline:2rem;
     }
 }
 @media (max-width:500px) {
-    .image {
-        padding-inline:1rem;
+    .image .wrapper {
+        padding-inline:1rem !important;
+        padding-block:6rem !important;
     }
-    .image p {
-        font-size:var(--mobile-heading-two);
+    .image .wrapper p {
+        font-size:var(--mobile-heading-two) !important;
     }
 }
 /* My Section */
@@ -417,6 +476,31 @@ h1 {
 .my-section .wrapper > p {
     font-size:var(--heading-two);
     text-align:center;
+}
+@media (max-width:700px) {
+    .my-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .my-section .wrapper {
+        padding-inline:1rem;
+    }
+    .my-section .wrapper > p {
+        font-size:var(--mobile-heading-two) !important;
+    }
+    .my-titles p {
+        font-size:var(--mobile-text) !important;
+    }
+
+}
+@media (max-width:620px) {
+    p {
+        text-align:left !important;
+    }
+    main p {
+        text-align:center !important;
+    }
 }
 /***** Footer *****/
 footer .wrapper {

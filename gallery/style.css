@@ -106,7 +106,7 @@ header {
 main {
     overflow:hidden !important;
     max-height:850px;
-    background-image:  url(../stairs/stairshero.png);
+    background-image:linear-gradient(#00000060, #00000060),  url(../jbi-grid-new/gallery-hero.png);
     background-repeat: no-repeat;
     background-size:cover;;
     background-position: center;
