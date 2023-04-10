@@ -182,8 +182,8 @@ h1 {
 @media (max-width:500px) {
  main .wrapper {
     padding-inline:1rem;
-    padding-top:12rem;
-    padding-bottom:10rem;
+    padding-top:13rem;
+    padding-bottom:8rem;
  }
  main .wrapper p {
     font-size:var(--mobile-text);
