@@ -4,7 +4,7 @@
     --card-titles: 25px;
     --text: 18px;
     --heading-one:60px;
-    --mobile-heading-one:50px;
+    --mobile-heading-one:45px;
     --mobile-heading-two:30px;
     --mobile-text:14px;
     --new-colour:#38618C;
@@ -107,14 +107,13 @@ header {
 /****** Hero *******/
 
 main .wrapper {
-    padding-top:18rem;
+    padding-top:16rem;
     padding-bottom:12.25rem;
     overflow:visible;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-height:850px;
 }
 video,
 .rectangle {
@@ -172,6 +171,9 @@ h1 {
     br {
         display:none;
     }
+    main .wrapper p {
+        max-width:45ch;
+     }
 }
 @media (max-width:700px) {
  main .wrapper {
@@ -182,18 +184,11 @@ h1 {
  main .wrapper {
     padding-inline:1rem;
  }
- main .wrapper P {
+ main .wrapper p {
     font-size:var(--mobile-text);
  }
 }
-@media (max-width:435px) {
-    h1 {
-        font-size: 45px;
-    }
-    br {
-        display:none;
-    }
-}
+
 /***** Service ****/
 .what-we-do-section .wrapper {
     display:flex;
@@ -808,6 +803,7 @@ button {
 .intro-section {
     position:relative !important;
     z-index:10000000000 !important;
+    margin-top:-1rem;
 }
 
 .intro-section .wrapper {
